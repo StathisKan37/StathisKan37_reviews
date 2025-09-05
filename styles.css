@@ -5,3 +5,12 @@ body{color: white;
 
 .container-fluid{background-color: #333333;
 }
+
+h1{	font-family: Ubuntu;
+	font-weight: normal;
+	font-size: 60px;
+	text-align: center;}
+
+h2{	font-family: Ubuntu;
+	font-weight: normal;
+	text-align: center;}
