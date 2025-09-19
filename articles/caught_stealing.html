@@ -7,7 +7,7 @@
 	<link rel="icon" type="image/x-icon" href="../images/StathisKan_reviews_icon.ico">
 	<!-- Declaring the character encoding -->
 	<meta charset="utf-8">
-	<!-- Importing Bootstrap 5-->
+	<!-- Importing Bootstrap 5 -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -16,7 +16,8 @@
 </head>
 
 <body>
-	<div class="logo">
+<!-- HEADER -->
+	<div class="header">
 		<!-- Logo image -->
 		<picture>
 			<source media="(min-width: 540px)" srcset="../images/StathisKan_reviews_desktop.png">
@@ -24,19 +25,24 @@
 		</picture>
 	</div>
 
-	<ul>
-		<li><a href="../index.html">Home</a></li>
-		<li><a href="#news">News</a></li>
-		<li><a href="#contact">Contact</a></li>
-	</ul>
-
-	<hr style="height:40px; visibility:hidden;">
-
+<!-- NAVIGATION MENU -->
+<ul>
+	<li><a href="../index.html">Home</a></li>
+	<li><a href="#contact">Contact</a></li>
+	<li class="dropdown">
+		<a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+		<div class="dropdown-content">
+			<a href="#">Link 1</a>
+			<a href="#">Link 2</a>
+			<a href="#">Link 3</a>
+		</div>
+	</li>
+</ul>
 	
 	<!-- Article -->
 	<div class="container">
 		<h1>Should I watch Darren Aronofsky's 'Caught Stealing'?</h1>
-		<img src="../images/caught_stealing.jpg" alt="Caught_stealing" width="100%">
+		<img class="article" src="../images/caught_stealing.jpg" alt="Caught_stealing">
 		<br>
 		<p>Overall, Caught Stealing is a solid crime thriller that shows Aronofsky stretching a little — leaning into genre-entertainment more than some of his more psychological or surreal pieces — while still keeping enough darkness, grit, and character to make it more than just riffing on criminal fantasy. Austin Butler shines in the lead, the supporting cast is strong, and the film’s atmosphere and visuals are compelling.</p>
 		<p>If you're into crime thrillers with moral ambiguity, sharp direction, and a bit of style and grit (plus some dark humor), it’s definitely worth seeing. If you prefer cleaner tone, less violence, or more fully introspective character work, this might not hit all your sweet spots.</p>
