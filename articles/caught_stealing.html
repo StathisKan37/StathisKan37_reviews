@@ -13,28 +13,29 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 	<!-- Importing the CSS file -->
 	<link rel="stylesheet" href="../styles.css">
+	<!-- Loading the Javascript files -->
+	<script src="../scripts/footer.js" defer></script>
 </head>
 
 <body>
 <!-- HEADER -->
-	<div class="header">
-		<!-- Logo image -->
-		<picture>
-			<source media="(min-width: 540px)" srcset="../images/StathisKan_reviews_desktop.png">
-			<img src="../images/StathisKan_reviews_mobile.png" alt="StathisKan_reviews_logo" width="100%">
-		</picture>
-	</div>
+<header id="site-header" class="site-header">
+	<picture>
+		<source media="(min-width: 540px)" srcset="../images/StathisKan_reviews_desktop.png">
+		<img src="../images/StathisKan_reviews_mobile.png" alt="StathisKan_reviews_logo" width="100%">
+	</picture>
+</header>
 
 <!-- NAVIGATION MENU -->
 <ul>
 	<li><a href="../index.html">Home</a></li>
 	<li><a href="#contact">Contact</a></li>
 	<li class="dropdown">
-		<a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+		<a href="javascript:void(0)" class="dropbtn">Categories</a>
 		<div class="dropdown-content">
-			<a href="#">Link 1</a>
-			<a href="#">Link 2</a>
-			<a href="#">Link 3</a>
+			<a href="#">Should I watch?</a>
+			<a href="#">Should I start a marathon?</a>
+			<a href="#">Should I watch again?</a>
 		</div>
 	</li>
 </ul>
@@ -47,5 +48,9 @@
 		<p>Overall, Caught Stealing is a solid crime thriller that shows Aronofsky stretching a little — leaning into genre-entertainment more than some of his more psychological or surreal pieces — while still keeping enough darkness, grit, and character to make it more than just riffing on criminal fantasy. Austin Butler shines in the lead, the supporting cast is strong, and the film’s atmosphere and visuals are compelling.</p>
 		<p>If you're into crime thrillers with moral ambiguity, sharp direction, and a bit of style and grit (plus some dark humor), it’s definitely worth seeing. If you prefer cleaner tone, less violence, or more fully introspective character work, this might not hit all your sweet spots.</p>
 	</div>
+
+<!-- FOOTER -->
+<footer class="site-footer" id="site-footer"></footer>
+
 </body>
 </html>
