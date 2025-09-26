@@ -1,13 +1,24 @@
+/* ------ */
 /* Colors */
+/* ------ */
 :root {
-	--header-gray: #333333;
-	--body-gray: #101010;
-	--footer-gray: #1a1a1a;
-	--dropdown-gray: #4d4d4d;
-	--hover-yellow: #ffcc00;
-	--light-yellow: #ffd966;}
+	--header-gray: rgb(50, 50, 50);
+	--body-gray: rgb(15, 15, 15);
+	--footer-gray: rgb(25, 25, 25);
+	--dropdown-gray: rgb(77, 77, 77);
+	--hover-yellow: rgb(255, 204, 0);
+	--light-yellow: rgb(255, 217, 102);
+	--spoiler-color: rgba(255,0,0,0.7);
+	--icon-facebook: rgb(60, 90, 150);
+	--icon-twitter: rgb(85, 172, 238);
+	--icon-google: rgb(220, 75, 55);
+	--icon-youtube: rgb(190, 0, 0);
+	--icon-reddit: rgb(255, 90, 0);}
 
+
+/* ---- */
 /* BODY */
+/* ---- */
 body{color: white;
 	background-color: var(--body-gray);
 	margin: 0;
@@ -35,7 +46,7 @@ div.spoiler{position: absolute;
 	font-weight: bold;
 	font-size: 28px;
 	color: white;
-	background-color: rgba(255,0,0,0.7);}
+	background-color: var(--spoiler-color);}
 
 h1{	font-family: Arial;
 	font-weight: normal;
@@ -47,7 +58,10 @@ h2{	font-family: Arial;
 	font-weight: normal;
 	text-align: center;}
 
+
+/* --------------- */
 /* Navigation Menu */
+/* --------------- */
 ul {list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -91,3 +105,38 @@ li.dropdown {
 
 .dropdown:hover .dropdown-content {
 	display: block;}
+
+
+/* ------------------ */
+/* Social media icons */
+/* ------------------ */
+.fa {
+	padding: 10px;
+	font-size: 15px;
+	width: 35px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 50%;}
+
+.fa:hover {
+	opacity: 0.75;}
+
+.fa-facebook {
+	background: var(--icon-facebook);
+	color: white;}
+
+.fa-twitter {
+	background: var(--icon-twitter);
+	color: white;}
+
+.fa-google {
+	background: var(--icon-google);
+	color: white;}
+
+.fa-youtube {
+	background: var(--icon-youtube);
+	color: white;}
+
+.fa-reddit {
+	background: var(--icon-reddit);
+	color: white;}
