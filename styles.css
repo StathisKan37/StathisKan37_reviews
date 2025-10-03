@@ -159,3 +159,11 @@ li.dropdown {
 .fa-reddit {
 	background: var(--icon-reddit);
 	color: white;}
+
+/* ------------------------------------ */
+/* When screen width is less than 480px */
+/* ------------------------------------ */
+@media screen and (max-width: 1200px) {
+	div.article-title {
+		font-size: 10px;}
+}
