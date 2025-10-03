@@ -17,18 +17,27 @@
 	--icon-reddit: rgb(255, 90, 0);}
 
 
+/* ------ */
+/* Header */
+/* ------ */
+header.site-header{
+	margin: 0;
+	padding: 0;
+	background-color: var(--header-gray);}
+
+img.site-header{
+	padding: 30px;
+	display: block;
+	margin-right: auto;
+	width: 50%;}
+
 /* ---- */
-/* BODY */
+/* Body */
 /* ---- */
 body{color: white;
 	background-color: var(--body-gray);
 	margin: 0;
 	padding: 0;}
-
-header.site-header{
-	margin: 0;
-	padding: 0;
-	background-color: var(--header-gray);}
 
 footer.site-footer{
 	color:white;
@@ -40,6 +49,7 @@ h1{	font-family: Arial;
 	font-weight: normal;
 	font-size: 30px;
 	padding: 20px;}
+
 
 /* ---------- */
 /* Thumbnails */
@@ -67,6 +77,7 @@ div.article-title{
 	font-weight: bold;
 	font-size: 28px;
 	font-weight: bold;
+	text-align: center;
 	text-shadow: 3px 3px 4px black;}
 
 div.article-title:hover{
@@ -161,9 +172,15 @@ li.dropdown {
 	color: white;}
 
 /* ------------------------------------ */
-/* When screen width is less than 480px */
+/* When screen width is less than 900px */
 /* ------------------------------------ */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
+	img.site-header{
+		padding: 30px;
+		width: 100%;}
+	
 	div.article-title {
-		font-size: 10px;}
+		font-size: 20px;}
+	div.spoiler {
+		font-size: 20px;}
 }
