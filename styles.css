@@ -26,7 +26,9 @@ header.site-header{
 	background-color: var(--header-gray);}
 
 img.site-header{
-	padding: 30px;
+	position: relative;
+	top: 20px;
+	padding: 20px;
 	display: block;
 	margin-right: auto;
 	width: 50%;}
@@ -39,27 +41,23 @@ body{color: white;
 	margin: 0;
 	padding: 0;}
 
-footer.site-footer{
-	color:white;
-	background-color: var(--footer-gray);
-	padding:30px;
-	text-align: center;}
+div.image-container {
+	position: relative;
+	display: inline-block;
+	color: white;}
 
 h1{	font-family: Arial;
 	font-weight: normal;
 	font-size: 30px;
 	padding: 20px;}
 
-
 /* ---------- */
 /* Thumbnails */
 /* ---------- */
-div.image-container {
-	position: relative;
-	display: inline-block;
-	color: white;}
+img.image-thumbnail{
+	width: 100%;}
 
-div.spoiler {
+div.spoiler{
 	position: absolute;
 	padding: 3px;
 	font-family: Arial;
@@ -69,7 +67,7 @@ div.spoiler {
 	color: white;
 	background-color: var(--spoiler-color);}
 
-div.article-title{
+div.thumbnail-title{
 	position: absolute;
 	bottom: 10px;
 	padding: 3px;
@@ -78,15 +76,35 @@ div.article-title{
 	font-size: 28px;
 	font-weight: bold;
 	text-align: center;
-	text-shadow: 3px 3px 4px black;}
+	text-shadow: 2px 2px 4px black, 2px 2px 4px black;}
 
-div.article-title:hover{
+div.thumbnail-title:hover{
 	opacity:0.6;}
 
+/* ------ */
+/* Footer */
+/* ------ */
+footer.site-footer{
+	color:white;
+	background-color: var(--footer-gray);
+	padding:30px;
+	text-align: center;}
+
+/* ---------- */
+/*  Articles  */
+/* ---------- */
 img.article {
 	display: block;
-	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 75%;
 	height: auto;}
+
+div.article-date{
+	font-size: 28px;
+	padding: 10px;
+	text-align: right;
+	}
 
 /* --------------- */
 /* Navigation Menu */
@@ -171,15 +189,14 @@ li.dropdown {
 	background: var(--icon-reddit);
 	color: white;}
 
-/* ------------------------------------ */
-/* When screen width is less than 900px */
-/* ------------------------------------ */
-@media screen and (max-width: 1000px) {
+/* --------------------------------------- */
+/*  When screen width is less than 1000px  */
+/* --------------------------------------- */
+@media screen and (max-width: 800px) {
 	img.site-header{
-		padding: 30px;
 		width: 100%;}
 	
-	div.article-title {
+	div.thumbnail-title {
 		font-size: 20px;}
 	div.spoiler {
 		font-size: 20px;}
