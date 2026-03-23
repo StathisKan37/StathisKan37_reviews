@@ -36,31 +36,46 @@ img.site-header{
 /* ---- */
 /* Body */
 /* ---- */
-body{color: white;
+body{font-family: Arial;
+	color: white;
 	background-color: var(--body-gray);
 	margin: 0;
 	padding: 0;}
 
-div.image-container {
-	position: relative;
-	display: inline-block;
-	color: white;}
+div.webpage-container {
+	font-family: Arial;
+	width: 90%;
+	max-width: 1300px;
+	margin: 0 auto;
+	padding: 10px;}
 
-h1{	font-family: Arial;
-	font-weight: normal;
+.gallery {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 10px;
+	padding: 10px;}
+
+.gallery img {
+	width: 100%;}
+
+h1{	font-weight: normal;
 	font-size: 30px;
 	padding: 20px;}
 
 /* ---------- */
 /* Thumbnails */
 /* ---------- */
+div.image-container {
+	position: relative;
+	display: inline-block;
+	color: white;}
+
 img.image-thumbnail{
 	width: 100%;}
 
 div.spoiler{
 	position: absolute;
 	padding: 3px;
-	font-family: Arial;
 	font-weight: bold;
 	font-size: 28px;
 	font-weight: bold;
@@ -69,9 +84,8 @@ div.spoiler{
 
 div.thumbnail-title{
 	position: absolute;
-	bottom: 10px;
+	bottom: 50px;
 	padding: 3px;
-	font-family: Arial;
 	font-weight: bold;
 	font-size: 28px;
 	font-weight: bold;
@@ -97,14 +111,13 @@ img.article {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 75%;
+	width: 85%;
 	height: auto;}
 
 div.article-date{
 	font-size: 28px;
 	padding: 10px;
-	text-align: right;
-	}
+	text-align: right;}
 
 /* --------------- */
 /* Navigation Menu */
@@ -112,7 +125,7 @@ div.article-date{
 ul {list-style-type: none;
 	margin: 0;
 	padding: 0;
-	min-height: 45px;
+	min-height: 40px;
 	background-color: var(--navbar-color);
 	position: fixed;
 	width: 100%;
@@ -161,7 +174,7 @@ li.dropdown {
 .fa {
 	padding: 10px;
 	font-size: 15px;
-	width: 35px;
+	width: 16px;
 	text-align: center;
 	text-decoration: none;
 	border-radius: 50%;}
@@ -194,10 +207,21 @@ li.dropdown {
 /* --------------------------------------- */
 @media screen and (max-width: 800px) {
 	img.site-header{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 90%;}
+	.gallery {
+		grid-template-columns: 1fr;}
+		
+	div.image-container {
 		width: 100%;}
-	
 	div.thumbnail-title {
 		font-size: 20px;}
+
 	div.spoiler {
+		font-size: 20px;}
+	
+	div.article-date{
 		font-size: 20px;}
 }
